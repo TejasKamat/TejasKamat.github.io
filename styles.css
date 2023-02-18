@@ -22,33 +22,36 @@ img {
 }
 
 .content{
+  margin: auto;
   margin-top: 60px;
   padding: 200px;
-  background: hsl(168, 100%, 77%);
+  width: 30%;
+  background: #8affe8;
   border-radius: 15px;
   border-style: solid;
-  border-color: #ddd;
+  border-color: #b6b6b6;
   border-width: 6px;
-  margin-right: 100px;
-  margin-left: 100px;
 }
 .ending{
   margin: auto;
   width: 50%;
   margin-top: 60px;
-  padding: 30px;
-  background-color: #1abc9c;
-  border-radius: 12px;
-  align-items: center;
-
-}
-.ending a{
-  background-color: #35b8d6;
-  border-radius: 20px;
+  margin-bottom: 20px;
   padding: 20px;
-  font-size: 20px;
+  background: #16a085;
+  border-radius: 12px;
+  text-align: center;
+  border: solid 6px;
+  border-color: #b6b6b6;
+}
+
+.ending a{
+  padding: 10px;
   text-decoration: none;
-  color: darkslategrey;
-  border: solid beige;
-  align-items: center;
+  font-size: 20px;
+  border: solid 3px;
+  border-radius: 8px;
+  border-color: #b6b6b6;
+  color: #921859;
+  background-color: pink;
 }
