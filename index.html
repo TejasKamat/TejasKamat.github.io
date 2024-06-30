@@ -3,51 +3,120 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <title>TejasKamat</title>
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <div class="hbar">
-            <img class="poto" src="/assets/my_img.jpg" alt="">
-            <div class="nem">
-                <p>It's me! Tejas Kamat</p>
-                <p>Aka. RapidFastner</p>
-            </div>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="https://github.com/TejasKamat?tab=repositories" target="_blank"
+                    rel="noopener noreferrer">Tejas Kamat || RapidFastner</a></h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a target="_blank" href="https://tejaskamat.github.io/resume">Resume</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <h2 class="hero-title">Welcome to My Portfolio</h2>
+            <p class="hero-subtitle">Showcasing my work and skills</p>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a target="_blank" href="https://tejaskamat.github.io/resume" class="btn">View My Resume</a>
         </div>
     </header>
-    <main>
-        <div class="content">
-            <pre>
-    {
-        "Biography": [
-     
-           {
-              "Name": "Tejas Kamat",
-              "Regional": "Hindi, English",
-              "Prefered-Languages": "Hinglish",
-              "DOB": "00 July 2005",
-              "Skills": "py, sh, C, HTML, CSS, git",
-              "TZ": "GMT+5:30",
-              "Interests": "AOSP, FOSS, Linux"
-           }
-        ]
-    }       </pre>
+
+    <div id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="row">
+                <div class="card" style="width: 20rem;">
+                    <img src="images/1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">RapidPassGen</h5>
+                        <a href="https://tejaskamat.github.io/RapidPassGen" target="_blank"
+                            class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem;">
+                    <img src="images/2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">RapidAnime</h5>
+                        <a href="https://tejaskamat.github.io/RapidAnime" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 20rem;">
+                    <img src="images/3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">RapidTodo</h5>
+                        <a href="https://tejaskamat.github.io/RapidTodo" class="btn btn-primary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </main>
-    <footer>
-        <div class="ending">
-            <a href="https://telegram.me/RapidFastner">Telegram</a>
-            <a href="https://github.com/TejasKamat">Git Hub</a>
-            <a href="https://www.instagram.com/rapidfastner_alt/">Instagram</a>
+    </div>
+
+    <div id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <pre>
+{
+    "AboutMe": [
+ 
+       {
+          "Name": "Tejas Kamat",
+          "Language": "Hindi, English, Konkani",
+          "AGE": "18",
+          "Skills": "C, HTML, CSS, SH, Java, JS, git",
+          "TZ": "GMT+5:30",
+          "Qualification": "Computer Engineer <span>&#xB7;</span> Student",
+          "Interests": "AOSP, FOSS, Linux, Web Dev, Speeding"
+       }
+    ]
+}</pre>
+            </div>
         </div>
-        <div class="wip">
-            <small>This website is still under development stage.</small>
+    </div>
+
+    <div id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form>
+                <div class="row mb-3 mx-auto">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPassword3" placeholder="Enter Your Name :)">
+                    </div>
+                </div>
+                <div class="row mb-3 w-lg-50 mx-auto">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Your Email :)">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
         </div>
-    </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
