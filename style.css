@@ -61,16 +61,19 @@ body {
 
 /* Responsive Navbar */
 @media (max-width: 1200px) {
+    .navbar {
+        padding: 0px;
+    }
     .navbar .logo a {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .navbar .nav-links li {
-        margin-left: 10px;
+        margin-left: 5px;
     }
 
     .navbar .nav-links a {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
